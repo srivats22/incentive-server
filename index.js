@@ -40,3 +40,6 @@ require('./app/route/routes.js')(app)
 http.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
 });
+
+http.keepAliveTimeout = 120 * 1000;
+http.headersTimeout = 120 * 1000;
