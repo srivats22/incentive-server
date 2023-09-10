@@ -20,6 +20,8 @@ var serviceJson = {
     "universe_domain": process.env.UNIVERSE_DOMAIN
 }
 
+console.log(process.env.REACT_PRIVATE_KEY_ID)
+
 admin.initializeApp({
     credential: admin.credential.cert(serviceJson),
     storageBucket: "gs://experimentswithsri.appspot.com",
