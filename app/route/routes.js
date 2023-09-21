@@ -10,4 +10,10 @@ module.exports = function(app){
     });
 
     app.get("/api/auth/getUserBasedOnEmail", controller.getUserBasedOnEmail);
+
+    app.get('/api/db/getUserInfo', controller.getUserInfo);
+
+    app.get('/api/db/getTodaysTask', controller.getTodaysTask);
+
+    app.get('/api/:id', controller.testApi);
 }
